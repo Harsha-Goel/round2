@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <script src="https://kit.fontawesome.com/7eb5897a7f.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .mon {
+            text-decoration: line-through;
+        }
+
+        .check {
+            display: flex;
+        }
+
+        .change {
+            display: flex;
+        }
+
+        div.right {
+            background-color: rgba(0, 0, 0, 0.1);
+            font-size: 18px;
+            border-radius: 10px;
+            height: 600px;
+            width: 400px;
+            margin: 80px;
+        }
+
+        input {
+            height: 50px;
+            width: 300px;
+            border-radius: 6px;
+            border-color: #828282;
+            padding-left: 12px;
+        }
+
+        div.do {
+            padding: 30px;
+        }
+
+        label {
+            font-size: 15px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        div.table {
+            margin-top: 130px;
+        }
+
+        td.ship {
+            border-top: 1px solid rgb(162, 162, 162);
+            padding: 12px;
+            font-variant: small-caps;
+        }
+
+        .main {
+            margin: 50px;
+        }
+
+        img {
+            margin: 8px;
+            border-radius: 8px;
+        }
+
+        button {
+            width: 210px;
+            height: 50px;
+            text-align: centre;
+            background-color: coral;
+            border-radius: 8px;
+            border-color: coral;
+            cursor: pointer;
+            outline: none;
+        }
+        i {
+            margin: 5px;
+            color: rgb(188, 188, 188);
+        }
+        @media screen and(max-width: 480px) {
+            .check{
+                flex-direction: vertical;
+                justify-content: center;
+            }
+            div.right {
+                width: 350px;
+                height: 489px;
+            }
+            div.main {
+                width : 350px;
+            }
+            input {
+                width : 348px;
+                height : 40px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="check">
+
+        <div class="main">
+            <h1>Checkout</h1>
+            <h3>Contact information</h3>
+            <form>
+                <label for=""><i class="fa-solid fa-envelope"></i>Email</label>
+                <br>
+                <input type="email" name="your email" placeholder="Enter your email..."><br>
+                <label><i class="fa-solid fa-phone"></i>Phone</label><br>
+                <input type="number" name="your number" placeholder="Enter your phone..."><br>
+
+            </form>
+            <br><br>
+            <h3>Shipping Address</h3>
+            <form>
+                <label><i class="fa-solid fa-user"></i>Full name</label><br>
+                <input type="text" name="your name" placeholder="Rodeney cotton"><br>
+                <label><i class="fa-solid fa-house"></i>Address</label>
+                <br>
+                <input type="text" name="your address" placeholder="Your address..."><br>
+                <label><i class="fa-solid fa-city"></i>City</label><br>
+                <input type="text" name="your city" placeholder="Your city..."><br>
+                <br>
+                <div class="inner">
+                    <table>
+                        <tr>
+                            <td><label for=""><i class="fa-solid fa-earth-asia"></i>Country</label></td>
+                            <td> <label><i class="fa-solid fa-browser"></i>Postal code</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="your country" placeholder="Your country.."></td>
+                            <td><input type="number" name="your postal code" placeholder="Your postal code"></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <input type="checkbox" name="save information" id="save">
+                    <span></span>Save this information for next time</span>
+                    <br>
+                    <br>
+                    <button>Continue</button>
+                </div>
+                <br>
+            </form>
+        </div>
+        <div class="right">
+            <div class="change">
+                <div>
+                    <span><img src="bag.jpg"> </span>
+                </div>
+                <div class="do">
+                    <p>Vintage Backbag</p>
+                    <span><span style="color: coral;">$54.99 </span> <span class="mon">$94.99</span></span>
+                </div>
+            </div>
+            <div class="change">
+                <div>
+                    <img src="s.jpg" width="188px">
+                </div>
+                <div class="do">
+                    <p>Levi Shoes</p>
+                    <span><span style="color: coral;">$74.99 </span> <span class="mon">$124.99</span>
+                </div>
+            </div>
+            <div class="table">
+                <table>
+                    <tr>
+                        <td class="ship">Shipping</td>
+                        <td class="ship">$19</td>
+                    </tr>
+                    <tr>
+                        <td class="ship">Total</td>
+                        <td class="ship">$148.98</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
